@@ -13,7 +13,7 @@ if [[ -f ./build.sbt ]] && [[ -d ./src/main/g8 ]]; then
         cd .makeitg8
    fi
 
-   sbt "run --noclear --source ../../target/sandbox/seed-test --target ../.. --name scala-seed --package com.github.arturopala.seedtest --description scala-seed  -K projectName=Seed+Test userName=Artur+Opala" 
+   sbt "run --noclear --source ../../target/sandbox/seed-test --target ../.. --name scala-seed --package com.github.arturopala.seedtest --description scala-seed  -K projectName=Seed+Test userName=Artur+Opala" -Dbuild.test.command="sbt test" 
 
 else
 
