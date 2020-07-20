@@ -8,7 +8,7 @@ How to create a new project based on the template?
 * Decide your service name (the hardest part :))
 * Run the command
 
-    `g8 arturopala/scala-sbt-seed.g8 --projectName="Seed Test" --userName="Artur Opala" --package="com.github.arturopala.seedtest" -o seed-test`
+    `g8 {GITHUB_USER}/scala-seed --projectName="Seed Test" --userName="Artur Opala" --package="com.github.arturopala.seedtest" -o seed-test`
     
 and then
     
@@ -110,6 +110,7 @@ and produce the folders and files as shown below:
 	│               └── github
 	│                   └── arturopala
 	│                       └── seedtest
+	│                           ├── AnyWordSpecCompat.scala
 	│                           └── SeedTestSpec.scala
 	│
 	└── version.sbt

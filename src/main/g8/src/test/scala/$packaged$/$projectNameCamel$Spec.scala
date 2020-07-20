@@ -16,12 +16,12 @@
 
 package $package$
 
-import org.scalatest.{Matchers, WordSpec}
-
-class $projectNameCamel$Spec extends WordSpec with Matchers {
+class $projectNameCamel$Spec extends AnyWordSpecCompat {
 
   "$projectNameCamel$" should {
-    "compute" in {}
+    "compute smth" in {
+      1 + 1 shouldBe 2
+    }
   }
 
 }
